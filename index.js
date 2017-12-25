@@ -10,5 +10,8 @@ function driverNamesWithRevenueOver(drivers,rev){
     if (element.revenue > rev) {
       return element.name
     }
+    else {
+      return null 
+    }
   })
 }
