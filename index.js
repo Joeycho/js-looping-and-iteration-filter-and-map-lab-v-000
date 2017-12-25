@@ -19,3 +19,10 @@ function exactMatch(drivers,obj){
     return element.name===obj.name || element.revenue===obj.revenue
   })
 }
+function exactMatch(drivers,obj){
+  return drivers.filter(function(element){
+    return element.name===obj.name || element.revenue===obj.revenue
+  }).map(function(element){
+    return element.name
+  })
+}
