@@ -4,3 +4,11 @@ function driversWithRevenueOver(drivers,rev){
     return element.revenue > rev
   })
 }
+
+function driverNamesWithRevenueOver(drivers,rev){
+  return drivers.map(function(element){
+    if (element.revenue > rev) {
+      return element.name
+    }
+  })
+}
