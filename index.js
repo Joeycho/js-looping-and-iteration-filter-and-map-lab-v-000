@@ -13,3 +13,9 @@ return drivers.filter(function(element){
     return element.name
   })
 }
+
+function exactMatch(drivers,obj){
+  return drivers.filter(function(element){
+    return element.name===obj.name || element.revenue===obj.revenue
+  })
+}
